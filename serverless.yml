@@ -14,7 +14,7 @@ functions:
     handler: handler.main
     events:
       - http:
-          path: ftlabs-constituency-api/{postCode}
+          path: ftlabs-constituency-api/{postcode}
           method: get
           cors:
             origin: "*"
