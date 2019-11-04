@@ -2,7 +2,7 @@
 const fs = require("fs");
 const postcodes = JSON.parse(fs.readFileSync("./data/constituencyMatch.json"));
 
-module.exports.hello = async event => {
+module.exports.main = async event => {
   const constituency = getConstituency(event.pathParameters.postcode);
   return {
     statusCode: 200,
